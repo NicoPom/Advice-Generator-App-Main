@@ -44,7 +44,7 @@ h1 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
-p {
+blockquote {
   color: var(--Light-Cyan);
   font-size: 28px;
 }
