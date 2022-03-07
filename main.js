@@ -31,7 +31,7 @@ const main = document.getElementsByTagName('main')[0];
 button.addEventListener("mouseup", refresh);
 
 function refresh(){
-    fetch('https://api.adviceslip.com/advice')
+    fetch('https://api.adviceslip.com/advice', {cache: "no-store"})
     .then(response => response.json())
     .then(data => {
         quote.innerHTML ='"' + data.slip.advice + '"';
